@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.actframework.demo</groupId>
+  <artifactId>todo-ebean</artifactId>
+  <version>1.0.0</version>
+
+  <name>actframework app demo - TODO (ebean)</name>
+  <description>demonstrates a simple TODO application for ebeean</description>
+  <url>http://actframework.org/</url>
+
+  <properties>
+    <app.entry>demo.todo.ebean.Todo</app.entry>
+
+<!--    <act.version>1.8.32.0</act.version>-->
+
+  </properties>
+
+  <parent>
+    <groupId>org.actframework</groupId>
+    <artifactId>act-starter-parent</artifactId>
+    <version>1.8.31.0</version>
+  </parent>
+
+  <dependencies>
+
+    <!-- DAO -->
+<!--    <dependency>-->
+<!--      <groupId>org.actframework</groupId>-->
+<!--      <artifactId>act-beetlsql</artifactId>-->
+<!--    </dependency>-->
+    <dependency>
+      <groupId>org.actframework</groupId>
+      <artifactId>act-ebean</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.avaje.ebeanorm</groupId>
+      <artifactId>avaje-ebeanorm-elastic</artifactId>
+      <version>1.3.1</version>
+    </dependency>
+
+    <!--mysql-->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.47</version>
+      <scope>runtime</scope>
+    </dependency>
+
+    <!-- 数据库连接池 -->
+    <dependency>
+      <groupId>com.zaxxer</groupId>
+      <artifactId>HikariCP</artifactId>
+    </dependency>
+
+    <!-- 模板引擎 -->
+    <dependency>
+      <groupId>org.actframework</groupId>
+      <artifactId>act-beetl</artifactId>
+    </dependency>
+
+
+
+  </dependencies>
+
+</project>
